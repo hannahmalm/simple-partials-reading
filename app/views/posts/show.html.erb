@@ -1,5 +1,8 @@
-<%= @post.author.name %>
-<%= @post.author.hometown %>
+<!--<%= @author.name %>
+<%= @author.hometown %>-->
+
+<!--Since the author file is not in the posts forlder, specify the path-->
+<%=render 'authors/author'%>
 
 <h1><%= @post.title %></h1>
 <p><%= @post.description %></p>
